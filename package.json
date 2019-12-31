@@ -1,0 +1,28 @@
+{
+  "name": "giphy-mail",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/app.js",
+  "scripts": {
+    "build": "webpack --config webpack.gas.js ",
+    "deploy": "npm run build && cd dist && clasp push"
+  },
+  "keywords": [
+    "gmail-addon"
+  ],
+  "author": "jiehan1029@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/polyfill": "^7.7.0"
+  },
+  "dependencies": {
+    "@babel/core": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "babel-loader": "^8.0.6",
+    "copy-webpack-plugin": "^5.1.1",
+    "giphy-api": "^2.0.1",
+    "uuid": "^3.3.3",
+    "webpack": "^4.41.4",
+    "webpack-cli": "^3.3.10"
+  }
+}
